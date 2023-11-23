@@ -1,0 +1,186 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root {
+    --size: 100px;
+}
+
+.wrapper {
+    border: 5px solid green;
+}
+
+.wrapper2 {
+    border: 2px solid blue;
+}
+
+.rubrik {
+    border: 4px solid black;
+    text-align: center;
+}
+
+.lager {
+    border: 1px solid black;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.kurt {
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.bildtext {
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.lager2 {
+    border: 1px solid black;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.item {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bild1 {
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.bildtext1 {
+    border: 1px solid black;
+    min-width: 15rem;
+}
+
+.item2 {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bild2 {
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.bildtext2 {
+    border: 1px solid black;
+    min-width: 15rem;
+}
+
+@media all and (max-width: 1000px) {
+    .item {
+        justify-content: center;
+    }
+
+    .item2 {
+        justify-content: center;
+    }
+}
+
+.lager3 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 575px) {
+    .lager3 {
+        justify-content: center;
+    }
+
+    .tider {
+        margin-bottom: 1rem;
+    }
+
+    .info1 {
+        margin-bottom: 1rem;
+    }
+}
+
+/*@media lager 3 vid xx pixlar, justify content venter */
+
+.priser {
+    border: 1px solid black;
+    min-width: 200px;
+    text-align: center;
+    transform: rotate(35deg);
+}
+
+.tider {
+    border: 1px solid black;
+}
+
+.lager4 {
+    border: 2px solid green;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    height: var(--size);
+    justify-content: center;
+}
+
+.boka {
+    border: 1px solid black;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    appearance: none;
+}
+
+.styleing {
+    text-decoration: none;
+}
+
+.info1 {
+    min-width: 300px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.symbol {
+    border: 1px solid black;
+}
+
+.address {
+    border: 1px solid black;
+}
+
+.bildinfo1 {
+    border: 1px solid black;
+}
+
+.knappinfo1 {
+    border: 1px solid black;
+}
+
+.info2 {
+    min-width: 200px;
+    border: 1px solid black;
+}
