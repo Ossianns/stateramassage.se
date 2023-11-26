@@ -1,0 +1,303 @@
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root {
+    --size: 100px;
+    --ljus: #EBF5DF;
+    --ljusgrön: #BAD4AA;
+    --vanilla: #D4D4AA;
+    --grön: #137547;
+    --mörkgrön: #054A29;
+}
+
+.wrapper {
+    background-color: var(--ljus);
+}
+
+.wrapper2 {
+    margin: 0;
+}
+
+.rubrik {
+    text-align: center;
+}
+
+#curve {
+    fill: transparent;
+}
+
+.lager {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.item0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kurt {
+    border: 5px solid white;
+    border-radius: 3%;
+}
+
+@media all and (max-width:935px) {
+    .bildtext {
+        margin-top: 0.5rem;
+    }
+
+    .bildtext1 {
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .bildtext2 {
+        margin: 0.5rem;
+    }
+}
+
+@media all and (max-width:650px) {}
+
+.bildtext {
+    width: 250px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bildtextext {
+    border: 5px solid white;
+    background-color: var(--ljusgrön);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.lager2 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.item {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.bild1 {
+    border: 5px solid white;
+    border-radius: 3%;
+    min-width: 100px;
+}
+
+.bildtext1 {
+    width: 250px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bildtextext1 {
+    background-color: var(--ljusgrön);
+    margin-top: 2rem;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid white;
+    padding: 10px;
+}
+
+.item2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bild2 {
+    border: 5px solid white;
+    border-radius: 3%;
+}
+
+.bildtext2 {
+    width: 250px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bildtextext2 {
+    background-color: var(--ljusgrön);
+    margin-top: 2rem;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid white;
+    padding: 10px;
+}
+
+@media all and (max-width: 1000px) {
+    .item {
+        justify-content: center;
+    }
+
+    .item2 {
+        justify-content: center;
+    }
+
+    .lager {
+        justify-content: center;
+    }
+}
+
+.lager3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 575px) {
+    .lager3 {
+        justify-content: center;
+    }
+
+    .info1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/*@media lager 3 vid xx pixlar, justify content venter */
+
+.priser {
+    min-width: 200px;
+    text-align: center;
+    /*transform: rotate(35deg);*/
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+}
+
+.tider {
+    text-align: center;
+}
+
+.item3 {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 3%;
+    background-color: var(--ljusgrön);
+    justify-content: center;
+    padding: 5px;
+}
+
+.lager4 {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    height: var(--size);
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.boka {
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+    border-radius: 3%;
+}
+
+.bokatext {
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+
+.styleing {
+    text-decoration: none;
+
+    background-color: var(--ljusgrön);
+    opacity: 90%;
+
+    border-radius: 3%;
+
+    border: 5px solid white;
+    padding: 3px;
+}
+
+.info1 {
+    min-width: 300px;
+    border: 5px solid white;
+    border-radius: 2%;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.symbol {
+    border: 1px solid black;
+}
+
+.address {
+    background-color: var(--ljusgrön);
+    padding: 3px;
+}
+
+.bildinfo1 {
+    border-top: 5px solid white;
+}
+
+.knappinfo1 {
+    text-align: center;
+}
+
+.knapp2 {
+    background-color: var(--ljusgrön);
+    height: 2rem;
+}
+
+.knappknapp {
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.info2 {
+    border: 5px solid white;
+    min-width: 200px;
+    background-color: var(--ljusgrön);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3px;
+}
+
+.tlf {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.kontakt {
+    text-align: center;
+}
