@@ -41,6 +41,7 @@
 .kurt {
     border: 5px solid white;
     border-radius: 3%;
+    max-width: 400px;
 }
 
 @media all and (max-width:935px) {
@@ -301,3 +302,15 @@
 .kontakt {
     text-align: center;
 }
+
+/* Nils ändringar
+
+.bildtext {
+    margin-top: 0;
+}
+.bildtextext {
+    border: none;
+    background: none;
+}
+
+*/
