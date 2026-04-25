@@ -1,5 +1,3 @@
-let tlf = document.getElementById("tlf-el")
-
 function klick() {
-    tlf.textContent = "tlf: 072 207 26 45"
+    document.getElementById("tlf-el").textContent = "tlf: 072 207 26 45"
 }
