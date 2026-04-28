@@ -64,8 +64,14 @@ body {
 .logga-rubrik {
     font-size: 3rem;
     margin-top: -1rem;
+    margin-bottom: 2rem;
+    /* Nollställer marginalen under så den inte hoppar */
     font-family: 'Times New Roman', Times, serif;
     color: #B08612;
+    font-weight: bold;
+    /* VIKTIGT: div är inte fetstilt som standard, men h2 är det */
+    display: block;
+    /* Säkerställer att den tar upp en egen rad */
 }
 
 /* ── Full-size images ── */
