@@ -1,5 +1,11 @@
+/* =========================================
+   STATERA MASSAGE - HUVUD-CSS
+   ========================================= */
+
 * {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* Hjälper till att hålla ramarna inuti rutorna */
 }
 
 :root {
@@ -9,11 +15,15 @@
     --vanilla: #D4D4AA;
     --grön: #137547;
     --mörkgrön: #054A29;
+    /* Visuella tillägg för det moderna lyftet: */
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
 }
 
 /* ── Body ── */
 body {
     margin: 0;
+    background-color: var(--ljus);
 }
 
 /* ── Wrapper ── */
@@ -58,11 +68,12 @@ body {
     color: #B08612;
 }
 
-/* ── Full-size images (used in multiple places) ── */
+/* ── Full-size images ── */
 .full-img {
     height: 100%;
     width: 100%;
-    border-radius: 2%;
+    border-radius: calc(var(--radius) - 3px);
+    /* Matchar ramen perfekt */
 }
 
 /* ── Lager 1 ── */
@@ -79,8 +90,11 @@ body {
 
 .kurt {
     border: 5px solid white;
-    border-radius: 3%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     max-width: 400px;
+    background-color: white;
+    /* Fixar så transparenta hörn döljs */
 }
 
 /* ── H2 variants ── */
@@ -88,6 +102,7 @@ body {
     margin-bottom: -35px;
     margin-top: 2px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .h2-standard {
@@ -117,8 +132,6 @@ body {
     }
 }
 
-@media all and (max-width:650px) {}
-
 .bildtext {
     width: 250px;
     margin-left: 1rem;
@@ -130,7 +143,8 @@ body {
 .bildtextext {
     border: 5px solid white;
     background-color: var(--ljusgrön);
-    border-radius: 5%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     padding: 10px;
 }
 
@@ -150,8 +164,10 @@ body {
 
 .bild1 {
     border: 5px solid white;
-    border-radius: 3%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     min-width: 100px;
+    background-color: white;
 }
 
 .bildtext1 {
@@ -163,7 +179,8 @@ body {
 .bildtextext1 {
     background-color: var(--ljusgrön);
     margin-top: 2rem;
-    border-radius: 5%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     text-align: center;
     border: 5px solid white;
     padding: 10px;
@@ -176,7 +193,9 @@ body {
 
 .bild2 {
     border: 5px solid white;
-    border-radius: 3%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background-color: white;
 }
 
 .bildtext2 {
@@ -188,7 +207,8 @@ body {
 .bildtextext2 {
     background-color: var(--ljusgrön);
     margin-top: 2rem;
-    border-radius: 2%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     text-align: center;
     border: 5px solid white;
     padding: 10px;
@@ -233,6 +253,7 @@ body {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 0.1rem;
+    color: var(--mörkgrön);
 }
 
 .tider {
@@ -243,29 +264,29 @@ body {
     display: flex;
     flex-direction: column;
     border: 5px solid white;
-    border-radius: 3%;
+    border-radius: var(--radius);
     background-color: var(--ljusgrön);
+    box-shadow: var(--shadow);
     justify-content: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* ── Info 1 (karta) ── */
 .info1 {
     min-width: 300px;
     border: 5px solid white;
-    border-radius: 2%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     display: grid;
     grid-template-rows: auto;
+    overflow: hidden;
+    /* Håller kartan innanför hörnen */
 }
 
 .box {
     display: grid;
     grid-template-columns: auto;
     text-align: center;
-}
-
-.symbol {
-    border: 1px solid black;
 }
 
 .address {
@@ -276,6 +297,7 @@ body {
 
 .bildinfo1 {
     border-top: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 .map-iframe {
@@ -291,11 +313,10 @@ body {
 .knapp2 {
     background-color: var(--ljusgrön);
     height: 2rem;
-}
-
-.knappknapp {
-    border: 1px solid black;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mörkgrön);
 }
 
 /* ── Info 2 (kontakt) ── */
@@ -303,15 +324,17 @@ body {
     border: 5px solid white;
     min-width: 200px;
     background-color: var(--ljusgrön);
-    border-radius: 3%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 3px;
+    padding: 10px;
 }
 
 .tlf {
     text-align: center;
+    cursor: pointer;
 }
 
 .email {
@@ -320,22 +343,36 @@ body {
 
 .kontakt {
     text-align: center;
+    font-weight: bold;
 }
 
 /* ── Google review länk ── */
 .google-review-link {
     text-align: center;
     text-decoration: none;
-    color: black;
-    border: 3px solid white;
-    border-radius: 3%;
-    padding: 3px;
-    background-color: var(--ljusgrön);
+    background-color: white;
+    border-radius: 30px;
+    /* Gör den till en "pill" */
+    padding: 8px 15px;
+    margin: 0 auto;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .google-review-text {
     font-weight: bold;
     color: #B08612;
+    /* Guldfärg */
+    transition: all 0.3s ease;
+}
+
+.google-review-link:hover {
+    background-color: #B08612;
+}
+
+.google-review-link:hover .google-review-text {
+    color: white;
 }
 
 /* ── Lager 4 (BOKA-knapp) ── */
@@ -346,6 +383,7 @@ body {
     height: var(--size);
     justify-content: center;
     margin-top: 1rem;
+    z-index: 100;
 }
 
 .boka {
@@ -362,8 +400,6 @@ body {
     appearance: none;
     outline: none;
     border: none;
-
-    border-radius: 3%;
 }
 
 .bokatext {
@@ -372,28 +408,45 @@ body {
     justify-content: center;
     font-family: serif;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
 }
 
 .styleing {
     text-decoration: none;
-
     background-color: var(--ljusgrön);
-    opacity: 90%;
-
-    border-radius: 3%;
-
+    opacity: 1;
+    border-radius: var(--radius);
     border: 5px solid white;
-    padding: 3px;
+    padding: 3px 25px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
 }
 
-/* Nils ändringar
-
-.bildtext {
-    margin-top: 0;
-}
-.bildtextext {
-    border: none;
-    background: none;
+.styleing:hover {
+    background-color: var(--grön);
+    transform: scale(1.02);
 }
 
-*/
+.styleing:hover .bokatext {
+    color: white;
+}
+
+/* ── Läs mer-knapp (Från tidigare steg) ── */
+.las-mer-knapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--mörkgrön);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid var(--grön);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.las-mer-knapp:hover {
+    background-color: var(--grön);
+    color: white;
+}
