@@ -24,23 +24,32 @@
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "HealthAndBeautyBusiness",
-        "name": "Statera Massage",
-        "url": "https://stateramassage.se/",
-        "logo": "https://stateramassage.se/bilder/StateraMassageLoggotyp.png",
-        "image": "https://stateramassage.se/bilder/kurt_2025_jpg.jpg",
-        "description": "Statera erbjuder klassisk massage och stretch som stärker blodcirkulationen och ökar ditt välbefinnande i Nyköping.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Brukslagarvägen 5C",
-            "addressLocality": "Nyköping",
-            "postalCode": "611 31",
-            "addressCountry": "SE"
-        },
-        "priceRange": "$$",
-        "openingHours": "Mo-Th 09:00-19:00, Fr 10:00-14:00, Su 10:00-14:00"
-    }   
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Statera Massage",
+      "url": "https://stateramassage.se/"
+    },
+    {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Statera Massage",
+      "url": "https://stateramassage.se/",
+      "logo": "https://stateramassage.se/bilder/StateraMassageLoggotyp.png",
+      "image": "https://stateramassage.se/bilder/kurt_2025_jpg.jpg",
+      "description": "Statera erbjuder klassisk massage och stretch som stärker blodcirkulationen och ökar ditt välbefinnande i Nyköping.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Brukslagarvägen 5C",
+        "addressLocality": "Nyköping",
+        "postalCode": "611 31",
+        "addressCountry": "SE"
+      },
+      "priceRange": "$$",
+      "openingHours": "Mo-Th 09:00-19:00, Fr 10:00-14:00, Su 10:00-14:00"
+    }
+  ]
+}
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XG8KGQE5L"></script>
