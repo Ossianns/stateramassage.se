@@ -502,23 +502,41 @@ address {
     color: white;
 }
 
-/* ── Läs mer-knapp (Från tidigare steg) ── */
+/* Nättare och elegantare "Läs mer"-knapp, fortfarande fint rundad */
 .las-mer-knapp {
-    display: inline-block;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    padding: 10px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+    /* Minskad storlek för ett nättare intryck */
     background-color: white;
     color: var(--mörkgrön);
+    border: none;
+    border-radius: 20px;
+    /* Behåller den snygga, moderna rundningen */
     text-decoration: none;
     font-weight: bold;
-    border-radius: 8px;
-    border: 2px solid var(--grön);
+    font-size: 0.9rem;
+    /* Lite mindre text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Mjuk skugga */
+    margin-top: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .las-mer-knapp:hover {
-    background-color: var(--grön);
+    background-color: var(--mörkgrön);
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobilanpassning - Lagom stor, inte över hela skärmen */
+@media (max-width: 600px) {
+    .las-mer-knapp {
+        /* Vi skippar "width: 100%" så den inte blir en gigantisk kloss */
+        padding: 12px 24px;
+        /* Bara aningen större klickyta för tummen */
+        font-size: 0.95rem;
+    }
 }
