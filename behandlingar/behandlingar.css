@@ -1,0 +1,70 @@
+/* =========================================
+   STATERA MASSAGE - OM STATERA CSS
+   ========================================= */
+
+.fv-container {
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.fv-premium-card {
+    background-color: var(--ljusgrön);
+    border: 5px solid white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fv-banner-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-bottom: 5px solid white;
+    display: block;
+}
+
+.fv-content {
+    padding: 3rem 4rem;
+}
+
+.fv-content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--mörkgrön);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.fv-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--mörkgrön);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.fv-text {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+/* Mobilanpassning */
+@media (max-width: 600px) {
+    .fv-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .fv-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .fv-banner-img {
+        height: 250px;
+    }
+}
