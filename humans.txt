@@ -1,0 +1,14 @@
+/* TEAM */
+Massör & innehavare: Kurt
+Site: https://stateramassage.se/
+Location: Nyköping, Sverige
+
+/* SITE */
+Last update: 2026-05-04
+Language: Svenska / Swedish
+Doctype: HTML5
+Standards: HTML5, CSS3
+Components: Schema.org structured data, Open Graph
+
+/* CONTACT */
+Adress: Brukslagarvägen 5C, 611 31 Nyköping

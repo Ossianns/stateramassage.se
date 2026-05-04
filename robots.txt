@@ -1,0 +1,39 @@
+# robots.txt for https://stateramassage.se/
+# Massage & stretching i Nyköping — Statera Massage
+
+User-agent: *
+Allow: /
+
+# Tillåt explicit alla bilder (viktigt för Google Images)
+Allow: /bilder/
+Allow: *.css
+Allow: *.js
+
+# Blockera versionskontroll och utvecklingsfiler
+Disallow: /.git/
+Disallow: /.github/
+
+# Var vänlig mot servern
+Crawl-delay: 1
+
+# AI-skrapor som inte respekterar nofollow / inte ger trafik
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://stateramassage.se/sitemap.xml
