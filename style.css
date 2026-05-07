@@ -98,7 +98,7 @@ body {
     border: 5px solid white;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    max-width: 400px;
+    max-width: 600px;
     background-color: white;
     /* Fixar så transparenta hörn döljs */
 }
